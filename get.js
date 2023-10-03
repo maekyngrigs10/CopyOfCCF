@@ -1,5 +1,8 @@
 //importing the initializeApp method from another js file on the web
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+import firebase from "firebase/compat/app";
+// Required for side-effects
+import "firebase/firestore";
 
 //setting up a constant variable (never changes) with all of the database information
 const firebaseConfig = {
@@ -16,6 +19,13 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 //making a "database" variable to prevent typing firebase.database() every time
 var database = firebase.database();
+
+import { doc, setDoc } from "firebase/firestore"; 
+
+// Add a new document in collection "cities"
+await setDoc(doc(db, "classes", "Computer Technology"), {
+  name: "Computer Technology",
+});
 
 //https://stackoverflow.com/questions/610406/javascript-equivalent-to-printf-string-format
 //modifying String's prototype in order to add python-like formatting - i love stack overflow
@@ -63,6 +73,8 @@ function addColleges() {
     });
 }
 //same function just with an if statement to only pass in Companies
+
+
 
 function addCompanies() {
     database.ref("Items").on('value', (snapshot) => {
