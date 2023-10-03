@@ -24,7 +24,7 @@ import { doc, setDoc } from "firebase/firestore";
 
 // Add a new document in collection "cities"
 await setDoc(doc(db, "classes", "Computer Technology"), {
-  name: "Computer Technology",
+  classes: "Computer Technology",
 });
 
 //https://stackoverflow.com/questions/610406/javascript-equivalent-to-printf-string-format
