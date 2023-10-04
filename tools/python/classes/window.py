@@ -19,21 +19,22 @@ class WindowClass:
         self.tk.title("CCF Manager")
         self.tk.resizable(False,False)
         #https://stackoverflow.com/questions/14900510/changing-the-application-and-taskbar-icon-python-tkinter
-        try:
+        '''try:
             #Runs if ran through python.
             self.tk.iconbitmap(default="./../images/logo.ico")
         except:
             #Runs if ran through .exe.
             self.tk.iconbitmap(default=f"{sys._MEIPASS}/logo.ico")
-
+        '''
         #widgets
         #This is odd but not much I can do. I recommend reading up on https://stackoverflow.com/questions/13148975/tkinter-label-does-not-show-image
-        try:
+        '''try:
             #Runs if ran through python.
             self.img = Image.open("./../images/logo.png").convert("RGBA")
         except:
             #Runs if ran through .exe.
             self.img = Image.open(f"{sys._MEIPASS}/logo.png").convert("RGBA")
+            '''
         self.img = ImageTk.PhotoImage(self.img.resize([self.img.size[0]//15,self.img.size[1]//15]))
         self.addToGrid(Label(self.tk,image=self.img,bg="black"),0,0,3)
         self.addToGrid(Label(self.tk,text="College Career Fair Manager",bg="black",fg="white",font=("ArialBold",15)),1,0,3)
