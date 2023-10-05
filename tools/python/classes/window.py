@@ -35,9 +35,9 @@ class WindowClass:
             #Runs if ran through .exe.
             self.img = Image.open(f"{sys._MEIPASS}/logo.png").convert("RGBA")
             '''
-        self.img = ImageTk.PhotoImage(self.img.resize([self.img.size[0]//15,self.img.size[1]//15]))
-        self.addToGrid(Label(self.tk,image=self.img,bg="black"),0,0,3)
-        self.addToGrid(Label(self.tk,text="College Career Fair Manager",bg="black",fg="white",font=("ArialBold",15)),1,0,3)
+        # self.img = ImageTk.PhotoImage(self.img.resize([self.img.size[0]//15,self.img.size[1]//15]))
+        #self.addToGrid(Label(self.tk,image=self.img,bg="black"),0,0,3)
+        #self.addToGrid(Label(self.tk,text="College Career Fair Manager",bg="black",fg="white",font=("ArialBold",15)),1,0,3)
 
     #Screen to add a card to firebase.
     def addItem(self):
