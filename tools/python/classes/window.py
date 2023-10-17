@@ -1,6 +1,6 @@
 from tkinter import Button, Listbox, OptionMenu, StringVar, Text, Tk, Label, messagebox
 from tkinter import filedialog
-from PIL import Image, ImageTk
+#from PIL import Image, ImageTk
 from classes.firebase import FirebaseClass
 import sys
 
