@@ -1,5 +1,4 @@
 {
-  "Items": {
     "Aerotek": {
       "desc": "Aerotek is a nationwide staffing company that specializes in recruiting distribution and logistics, facilities and maintenance, manufacturing, robotics and automation, aviation and airport operations. At Aerotek, we believe that an inclusive work environment empowers our people to achieve both their personal and professional aspirations.",
       "ia1": "Staffing and Recruiting for Light Industrial and Skilled Trades",
@@ -1416,5 +1415,5 @@
       "type": "",
       "web": "https://www.warehouseservices.com"
     }
-  }
+  
 }
