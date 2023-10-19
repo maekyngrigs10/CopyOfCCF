@@ -90,7 +90,7 @@ canvas.addEventListener("mousemove", mouseClicked, false);
 canvas.addEventListener("click", mouseClicked, false);
 // makes map sprite so i can uses the cord on the image and will resize to the size of the users screen
 var mapSprite = new Image();
-mapSprite.src = "https://maekyngrigs10.github.io/CopyOfCCF/images/drawMaps/sictcMapFinal.jpg";
+mapSprite.src = "https://maekyngrigs10.github.io/CopyOfCCF/images/sictcMapFinal.jpg";
 
 
 var Button = function() {
