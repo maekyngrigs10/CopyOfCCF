@@ -69,14 +69,15 @@ class FirebaseClass:
             i = i.split('\t')
             if len(i) == 1 or i[0] == "x" or i[0] == "":
                 continue
-            #Name of Organization,Interest Area,Desc,picture url,website,college/company/military,Completed?,On Website
+            #Name of Organization,Interest Area,Desc,picture url,Area,website,college/company/military,Completed?,On Website
             #0 Name, 3 Logo URL, 4 Website, 2 Desc, 1 Interests, 5 Type
             tempdata={}
             tempdata["name"] = i[0].strip()
             tempdata["logo"] = i[3].strip()
             if tempdata["logo"] == "0":
                 tempdata["logo"]=""
-            tempdata["web"] = i[4].strip()
+            tempdata["area"]= i[4].strip()
+            tempdata["web"] = i[5].strip()
             if len(tempdata["web"]) > 1 and not tempdata["web"].startswith("http"):
                 tempdata["web"] = "https://"+tempdata["web"].strip()
             tempdata["desc"] = i[2].strip()
@@ -91,7 +92,7 @@ class FirebaseClass:
             for n in range(5):
                 if not "ia"+str(n+1) in tempdata.keys():
                     tempdata["ia"+str(n+1)] = ""
-            tempdata["type"] = i[5].capitalize().strip()
+            tempdata["type"] = i[6].capitalize().strip()
             if tempdata["type"] == "0":
                 tempdata["type"]="Company"
             self.new(tempdata)
