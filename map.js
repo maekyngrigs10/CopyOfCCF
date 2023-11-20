@@ -4,7 +4,7 @@ const foyer = ["Kiesel Enterprises, INC", "Red Spot Paint & Varnish", "Parrish C
 const assembly = ["United States Navy", "Good Samaritan Home", "LIFT Academy", "Evansville Police Department", "Evansville Fire Department", "Southern Illinois University School of Health Sciences", "Infinity Molding & Assembly, Inc.", "US Army", "Deaconess", "Ciholas, Inc.", "BWX Technologies", "Metronet", "ECS Solutions Inc", "Project Associates Inc.", "Gribbins Specialty Group, Inc.", "The Arc Southwest Indiana", "Torsion Plastics", "Indiana Job Corps", "IU Luddy School of Informatics, Computing, and Engineering", "Hella Electronics Corp.", "Illinois Eastern Community Colleges", "Rose-Hulman Institute of Technology", "FedEx Ground", "Alliance Technical Group, LLC", "Franklin College", "ECS LIMITED", "Ivy Tech Community College"]
     // makes list of loctaions
 
-// OLD TOLIST keep might eventualy go back to a img tag instade of canvas
+// OLD TOLIST keep might eventually go back to a img tag instead of canvas
 // function toList(listy, name,id) {
 //   let all = document.getElementById(id)
 //   let div = document.createElement("div")

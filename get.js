@@ -106,7 +106,7 @@ function addUnions() {
     });
 }
 //same function but now that if it dosent pass the other ones it will pass it into the search bar and run this
-// this one will check name interests and decs of then item
+// this one will check name interests and desc of then item
 function addinterest(interest) {
     let content = false
     database.ref("Items").on('value', (snapshot) => {
@@ -121,7 +121,7 @@ function addinterest(interest) {
             }
 
         }
-        // if no resalts are found then show this page saying try anouther search
+        // if no results are found then show this page saying try another search
         if (content === false) {
             document.getElementById("body-output").innerHTML = "<h1 style=color:grey>Sorry nothing found with that search.</h1><img width=15% src=https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/1410400/rubber-duck-clipart-xl.png>";
 
@@ -156,7 +156,7 @@ document.getElementById("AnimalScience/Agriculture").onclick = function() { addi
 document.getElementById("search").onclick = function() { addinterest((document.getElementById("ui").value).toLowerCase()) };
 
 
-// adds a event to lisen if enter is clicked when it is it will search the page becuase its annoying to have to type then click search button
+// adds an event to lisen if enter is clicked when it is it will search the page because its annoying to have to type then click search button
 document.onkeydown = function(e) {
         e = e || window.event;
         switch (e.which || e.keyCode) {
@@ -236,7 +236,7 @@ async function addCard(l) {
 }
 
 
-// jquerry to add function to a button that shows up when you scroll down a bit that wil take you back to the top of the screen
+// jquery to add function to a button that shows up when you scroll down a bit that will take you back to the top of the screen
 $(window).scroll(function() {
     if ($(this).scrollTop() >= 50) {
         $('.return-to-top').fadeIn(250);
@@ -263,7 +263,7 @@ function search(search) {
 
     }
 }
-// check if you prevesley searched something and keep it on the searchbar so if you refressh then it wont un search
+// check if you previously searched something and keep it on the searchbar, so if you refresh then your search will be saved
 
 var interest = document.URL.split("?interest=")[1]
 if (interest != undefined) {
